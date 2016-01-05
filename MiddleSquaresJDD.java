@@ -26,7 +26,7 @@ public class MiddleSquaresJDD{
        * represented by this date.
        */
 		timeMilli1 = date.getTime();  //get the time
-			Thread.sleep(3000); //sleep for 1 second
+			Thread.sleep(1000); //sleep for 1 second
 		timeMilli2 = date.getTime(); //get the time
 			//the following converts the time from a long integer to a String then concatinates them
 			timestr =  Long.toString(timeMilli1) + Long.toString(timeMilli2);
@@ -34,14 +34,26 @@ public class MiddleSquaresJDD{
 			length = String.valueOf(timestr).length(); //get the length of the time string
 			mid = length / 2 ;  // get the middle value
 			//maxmin = ( mid / 2 );  // this is the value to adjust the time string to get the substring
-			System.out.println("\t" +length);// debug
-			seedstr = timestr.substring(mid - 5  , mid + 5 );  //get the substring
-			System.out.println("\t" +seedstr);  //debug
+			//System.out.println("\t" +length);// debug
+			seedstr = timestr.substring(5, 13 );  //get the substring
+			System.out.println("\tfirst seed :" +seedstr);  //debug
 			seed  = Integer.parseInt(seedstr);  //change the substring called seedstr to the seed
 			
 			//******************************************************************************
 			//  Write code to keep creating random numbers from the seed integer
-			
+			//i = 0;
+			System.out.println("Randoms :");
+			for (i = 0; i < 11; i++){
+				seed = seed * seed; // the new seed
+				newseedstr =  Long.toString(seed);  // long to string
+				length = String.valueOf(newseedstr).length(); // get length of string
+				mid = length / 2; //get the middle of the string
+				//System.out.println("\t" +length);// debug trace
+				seedstr = newseedstr.substring(mid - 4, mid + 4 ); //get sub string
+				//System.out.println("sub "+seedstr);//debug trace
+				seed  = Integer.parseInt(seedstr); // string to int
+				System.out.println("\t"+i+" "+seed+" ");
+			}
 			
 			//******************************************************************************
      	
