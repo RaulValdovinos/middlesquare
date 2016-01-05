@@ -10,7 +10,7 @@
 
 import java.util.Calendar;
 import java.util.Date;
-class MiddleSquaresVAM{
+class MiddleSquaresZOEY{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
@@ -30,19 +30,19 @@ class MiddleSquaresVAM{
 		timeMilli2 = date.getTime(); //get the time
 			//the following converts the time from a long integer to a String then concatinates them
 			timestr =  Long.toString(timeMilli1) + Long.toString(timeMilli2);
-			System.out.println("timeSeed  " +timestr);
+			System.out.println("TimeSeed  " +timestr);
 			length = String.valueOf(timestr).length(); //get the length of the time string
 			mid = length / 2 ;  // get the middle value
-				System.out.println("\t" +length);// debug  change this
+			//maxmin = ( mid / 2 );  // this is the value to adjust the time string to get the substring
+			//System.out.println("\t" +length);// debug  change this
 			seedstr = timestr.substring(5, 13 );  //get the substring
-			System.out.println("\t" +seedstr);  //debug
+			System.out.println("\tFirst Seed :" +seedstr);  //debug
 			seed  = Integer.parseInt(seedstr);  //change the substring called seedstr to the seed
 			
 			//******************************************************************************
 			//  Write code to keep creating random numbers from the seed integer
-			// you will need to publish 10 random numbers
 			//i = 0;
-	System.out.println("Randoms :");
+			System.out.println("Randoms :");
 			for (i = 0; i < 10; i++){
 				seed = seed * seed; // the new seed
 				newstr =  Long.toString(seed);  // long to string

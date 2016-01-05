@@ -10,7 +10,7 @@
 
 import java.util.Calendar;
 import java.util.Date;
-class MiddleSquaresVAM{
+class MiddleSquaresKAH{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
@@ -42,7 +42,9 @@ class MiddleSquaresVAM{
 			//  Write code to keep creating random numbers from the seed integer
 			// you will need to publish 10 random numbers
 			//i = 0;
-	System.out.println("Randoms :");
+	
+			//******************************************************************************
+     	System.out.println("Randoms :");
 			for (i = 0; i < 10; i++){
 				seed = seed * seed; // the new seed
 				newstr =  Long.toString(seed);  // long to string
@@ -54,7 +56,5 @@ class MiddleSquaresVAM{
 				seed  = Integer.parseInt(seedstr); // string to int
 				System.out.println("\t"+i+" "+seed+" ");
 			}
-			//******************************************************************************
-     	
    }
 }

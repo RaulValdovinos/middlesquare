@@ -2,7 +2,7 @@
 //Multiply the seed by itself
 //Outputthe middle of this result
 //Middle squares method
-// Starter code by CWColeman (CWC)
+// Starter code by BJGusar (BJG)
 //  Change the name of the class with 
 //your initials and get ready 
 // to push this back to the repo
@@ -10,7 +10,7 @@
 
 import java.util.Calendar;
 import java.util.Date;
-class MiddleSquaresVAM{
+class MiddleSquaresCWC{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
@@ -42,18 +42,7 @@ class MiddleSquaresVAM{
 			//  Write code to keep creating random numbers from the seed integer
 			// you will need to publish 10 random numbers
 			//i = 0;
-	System.out.println("Randoms :");
-			for (i = 0; i < 10; i++){
-				seed = seed * seed; // the new seed
-				newstr =  Long.toString(seed);  // long to string
-				length = String.valueOf(newstr).length(); // get length of string
-				mid = length / 2; //get the middle of the string
-				//System.out.println("\t" +length);// debug trace
-				seedstr = newstr.substring(mid - 4, mid + 4 ); //get sub string
-				//System.out.println("sub "+seedstr);//debug trace
-				seed  = Integer.parseInt(seedstr); // string to int
-				System.out.println("\t"+i+" "+seed+" ");
-			}
+	
 			//******************************************************************************
      	
    }

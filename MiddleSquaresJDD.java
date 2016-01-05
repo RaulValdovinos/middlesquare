@@ -6,18 +6,18 @@
 //  Change the name of the class with 
 //your initials and get ready 
 // to push this back to the repo
-//  the name of the class needs to be the same name as the file
+//  the name of the class needs to be the same name of the file
 
 import java.util.Calendar;
 import java.util.Date;
-class MiddleSquaresVAM{
+public class MiddleSquaresJDD{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
-		int i,seed, newseed, length, mid, maxmin; // integers
+		int i,seed,  length, mid, maxmin; // integers
 		String timestr;  // time String
 		String seedstr;    //seed string
-		String newstr;  //new seed string
+		String newseedstr;  //new seed string
 		
       //Date Object
       Date date = new Date();
@@ -33,27 +33,28 @@ class MiddleSquaresVAM{
 			System.out.println("timeSeed  " +timestr);
 			length = String.valueOf(timestr).length(); //get the length of the time string
 			mid = length / 2 ;  // get the middle value
-				System.out.println("\t" +length);// debug  change this
+			//maxmin = ( mid / 2 );  // this is the value to adjust the time string to get the substring
+			//System.out.println("\t" +length);// debug
 			seedstr = timestr.substring(5, 13 );  //get the substring
-			System.out.println("\t" +seedstr);  //debug
+			System.out.println("\tfirst seed :" +seedstr);  //debug
 			seed  = Integer.parseInt(seedstr);  //change the substring called seedstr to the seed
 			
 			//******************************************************************************
 			//  Write code to keep creating random numbers from the seed integer
-			// you will need to publish 10 random numbers
 			//i = 0;
-	System.out.println("Randoms :");
-			for (i = 0; i < 10; i++){
+			System.out.println("Randoms :");
+			for (i = 0; i < 11; i++){
 				seed = seed * seed; // the new seed
-				newstr =  Long.toString(seed);  // long to string
-				length = String.valueOf(newstr).length(); // get length of string
+				newseedstr =  Long.toString(seed);  // long to string
+				length = String.valueOf(newseedstr).length(); // get length of string
 				mid = length / 2; //get the middle of the string
 				//System.out.println("\t" +length);// debug trace
-				seedstr = newstr.substring(mid - 4, mid + 4 ); //get sub string
+				seedstr = newseedstr.substring(mid - 4, mid + 4 ); //get sub string
 				//System.out.println("sub "+seedstr);//debug trace
 				seed  = Integer.parseInt(seedstr); // string to int
 				System.out.println("\t"+i+" "+seed+" ");
 			}
+			
 			//******************************************************************************
      	
    }
