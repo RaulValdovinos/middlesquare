@@ -1,0 +1,28 @@
+How to Push Up your Commit on GitHub:
+
+copy the repo link to the clipboard
+
+git clone (repo link)
+
+enter cd repo(s)/
+
+git clone (repo link)
+
+cd (repo)/
+
+git pull                           (if entered vi, see lines 21-23)
+
+
+Halfway point (if made a edition on the repo, do this processes the rest down)
+
+
+git add (repo)
+type git pull
+if vi, press Esc, then tpe : (not ; there is a difference) then type q, then ! (:q!), enter
+type git commit -m "git pull"
+git pull again
+
+git commit -m "insert commit"
+
+git push
+(make sure you username and password are correct)
