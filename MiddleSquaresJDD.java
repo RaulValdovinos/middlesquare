@@ -53,6 +53,8 @@ public class MiddleSquaresJDD{
 				//System.out.println("sub "+seedstr);//debug trace
 				seed  = Integer.parseInt(seedstr); // string to int
 				System.out.println("\t"+i+" "+seed+" ");
+			        System.out.println("It works!")
+				
 			}
 			
 			//******************************************************************************
