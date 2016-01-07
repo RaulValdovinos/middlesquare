@@ -10,7 +10,7 @@
 
 import java.util.Calendar;
 import java.util.Date;
-class MiddleSquaresZOEY{
+class MiddleSquaresJZ{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
