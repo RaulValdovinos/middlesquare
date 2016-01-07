@@ -1,0 +1,15 @@
+Do a "git config --list" first to make sure how you are logged in to github.
+
+ $ git config --list
+ 
+Add the file to be pushed 
+$ git add MiddleSquaresCWC.java
+
+Commit the file.
+$ git commit -m "add cwc java"
+
+Push the file
+$ git push
+
+
+
