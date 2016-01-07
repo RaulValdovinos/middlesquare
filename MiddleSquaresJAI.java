@@ -14,10 +14,10 @@ public class MiddleSquaresJAI{
    public static void main(String[] args) throws InterruptedException
    {
 		long timeMilli1,  timeMilli2, timeSeed;  //long intergers
-		int i,seed,  length, mid, maxmin; // integers
+		int i,seed, newseed,  length, mid, maxmin; // integers
 		String timestr;  // time String
 		String seedstr;    //seed string
-		String newseedstr;  //new seed string
+		String newstr;  //new seed string
 		
       //Date Object
       Date date = new Date();
@@ -41,8 +41,18 @@ public class MiddleSquaresJAI{
 			
 			//******************************************************************************
 			//  Write code to keep creating random numbers from the seed integer
-			
-			
+			System.out.println("Randoms :");
+			for (i = 0; i < 100000000; i++){
+				seed = seed * seed; // the new seed
+				newstr =  Long.toString(seed);  // long to string
+				length = String.valueOf(newstr).length(); // get length of string
+				mid = length / 2; //get the middle of the string
+				//System.out.println("\t" +length);// debug trace
+				seedstr = newstr.substring(mid - 4, mid + 4 ); //get sub string
+				//System.out.println("sub "+seedstr);//debug trace
+				seed  = Integer.parseInt(seedstr); // string to int
+				System.out.println("\t"+i+" "+seed+" ");
+			}
 			//******************************************************************************
      	
    }
