@@ -40,9 +40,11 @@ class MiddleSquaresCWC{
 			
 			//******************************************************************************
 			//  Write code to keep creating random numbers from the seed integer
-			// you will need to publish 10 random numbers
-			//i = 0;
-	
+			// you will need to ouput 10 random numbers
+
+
+			// learn how to code
+			}
 			//******************************************************************************
      	
    }
