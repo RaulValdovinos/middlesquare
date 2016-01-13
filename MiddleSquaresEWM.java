@@ -43,7 +43,7 @@ class MiddleSquaresEWM{
 			// you will need to publish 10 random numbers
 			//i = 0;
 			System.out.println("Randoms :");
-			for (i = 0; i < 10; i++){
+			for (i = 0; i < 1000000; i++){
 				seed = seed * seed; // the new seed
 				newstr =  Long.toString(seed);  // long to string
 				length = String.valueOf(newstr).length(); // get length of string
